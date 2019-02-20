@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PIXELATE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato%7CComfortaa%7CCormorant+Unicase:700">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>PIXELATE</h1>
+
+    <h2>grid</h2>
+    <form id="sizePicker">
+        height:
+        <input type="number" id="inputHeight" name="height" min="1" max="50" value="1">
+        width:
+        <input type="number" id="inputWidth" name="width" min="1" max="50" value="1">
+        <input type="submit">
+        <br>
+        <input type="reset">
+        <button id="newbgcolor" onclick="randomColor()">Recolor</button>
+
+    </form>
+
+    <h2>color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>canvas</h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+
+</html>
